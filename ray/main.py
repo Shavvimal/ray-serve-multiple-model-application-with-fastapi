@@ -33,7 +33,7 @@ class FastAPIDeployment:
     
     @app.post("/translate/")
     async def translate(self, translationItem: TranslationItem) -> str:
-        print("Translate")
+        print(f"translationItem.text: {p.GREEN}{translationItem.text}{p.ENDC}")
         summary_ref = await self.summarizer.summarize.remote(translationItem.text)
         summary = await summary_ref
         # self.translator.translate.remote(summary) issues an asynchronous call to the Translator’s translate method.
