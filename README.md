@@ -1,4 +1,4 @@
-# Ray Serve multiple-model application With FastAPI
+# Ray Serve Multiple-Model application With FastAPI
 
 A basic example of a Ray Serve application. It demonstrates composing multiple-model machine learning models together into a single application; it combines multiple machine learning models (Summarize English text & Translate the summary into French) into a single API endpoint:
 
